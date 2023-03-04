@@ -4,9 +4,10 @@ import { Bars3Icon, BellIcon, XMarkIcon } from '@heroicons/react/24/outline'
 import { BrowserRouter, Routes, Route, Link } from "react-router-dom";
 import Products from './Products';
 import Navigation from './elements/Navigation';
-import AddProducts from './AddProducts';
+import AddProducts from './products/AddProducts';
 import SignUp from './signup/SignUp';
 import Login from './login/Login';
+import Lists from './products/Lists';
  
 const user = {
   name: 'Tom Cook', 
@@ -161,6 +162,7 @@ export default function DashboardLayout(){
                 <Route path='/signup' element={<SignUp />} />
                 <Route path='/login' element={<Login />} />
                 <Route path="/add_products" element={<AddProducts />} />
+                <Route path="/lists" element={<Lists />} />
                 <Route path="*" element={"<NoPage />"} />
             </Routes>        
         </div>

@@ -12,6 +12,7 @@ export default function Navigation(){
         { name: 'Sign Up', href: '/signup', current: true },
         { name: 'Products', href: '/products', current: false },
         { name: 'Add Products', href: '/add_products', current: false },
+        { name: 'Lists', href: '/lists', current: false },
         { name: 'Reports', href: '#', current: false },
     ];
 

@@ -107,7 +107,7 @@ export default function SignUp() {
               </div>
             </div>
 
-            <div className="flex items-center justify-between">
+            {/* <div className="flex items-center justify-between">
               <div className="flex items-center">
                 <input
                   id="remember-me" name="remember-me" type="checkbox"
@@ -122,7 +122,7 @@ export default function SignUp() {
                   Forgot your password?
                 </a>
               </div> 
-            </div>
+            </div> */}
 
             <div>
               <button onClick={Signup}
