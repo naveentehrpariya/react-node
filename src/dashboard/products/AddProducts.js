@@ -49,7 +49,8 @@ export default function AddProducts() {
                   <input  onChange={handleInput}type="text" name="name" className="form-control"  placeholder="Enter Your Product Title"/>
               </div>
               <div  className="col-md-6 mb-4" >
-                <input onChange={handleInput} type="file" name="image" className="form-control" placeholder="Choose File" />
+              <input onChange={handleInput} type="text" name="image" className="form-control" placeholder="Type Url" />
+
               </div>
               <div  className="col-md-6 mb-4" >
                 <input onChange={handleInput} type="text" name="category" placeholder="Category" className="form-control" />

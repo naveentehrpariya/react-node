@@ -7,6 +7,7 @@ import Navigation from './elements/Navigation';
 import SignUp from './signup/SignUp';
 import Login from './login/Login';
 import AddProducts from './products/AddProducts';
+import Lists from './products/Lists';
  
 const user = {
   name: 'Tom Cook', 
@@ -157,7 +158,7 @@ export default function DashboardLayout(){
         <div>
             <Routes>
                 <Route index element={<Products />} />
-                <Route path='/' element={<Products />} />
+                <Route path='/lists' element={<Lists />} />
                 <Route path='/signup' element={<SignUp />} />
                 <Route path='/login' element={<Login />} />
                 <Route path="/add-products" element={<AddProducts />} />
