@@ -14,3 +14,61 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+
+a { text-decoration: none !important;}
+
+.container{
+    width: 100%;
+    max-width: 1180px ;
+    margin: auto;
+}
+
+
+
+
+/* max-w-7xl */
+.product .product-in{
+    width: 60%;
+    margin: auto;
+}
+.inputform input{
+    padding: 10px 15px;
+    border:0;
+    box-shadow:inset 0 0 14px 4px #0001;
+}
+
+
+
+
+/* lists css............................................... */
+
+.lists .heading{
+    font-size: 30px;
+    padding-left: 20px;
+}
+.item-1 {
+    border-radius: 25px;
+    background: #f3f2f2;
+    overflow: hidden;
+}
+.detailspr{
+    padding: 20px;
+    text-align: center;
+
+}
+.detailspr h2{
+    font-size: 20px;
+    text-transform: uppercase;
+    
+}
+.detailspr h3{
+    font-weight: 700;
+}
+.detailspr button{
+    padding: 10px 35px;
+    background-color: #dad9d7;
+    border-radius: 10px;
+}
+
+

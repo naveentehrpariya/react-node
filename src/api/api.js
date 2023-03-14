@@ -1,11 +1,11 @@
 import axios from 'axios';
 const headers = {
     'Accept' : 'application/json',
-    'Access-Control-Allow-Credentials' :true
+    'Access-Control-Allow-Credentials' :true 
 }; 
 
 let Api = axios.create({ 
-    baseURL : 'https://nodemongo.cyclic.app',     
+    baseURL : 'http://localhost:5000/',     
     headers : headers 
 });     
 
