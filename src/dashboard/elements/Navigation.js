@@ -11,7 +11,7 @@ export default function Navigation(){
     const navigation = [
         { name: 'Sign Up', href: '/signup', current: true },
         { name: 'Products', href: '/products', current: false },
-        { name: 'Add Products', href: '/add_products', current: false },
+        { name: 'Add Products', href: '/add-products', current: false },
         { name: 'Reports', href: '#', current: false },
     ];
 

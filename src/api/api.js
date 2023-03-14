@@ -1,10 +1,17 @@
-import axios from "axios";
+import axios from 'axios';
+const headers = {
+    'Accept' : 'application/json',
+    'Access-Control-Allow-Credentials' :true
+}; 
 
-const Api = axios.create({
-    baseURL : 'http://localhost:5000', 
-});
+let Api = axios.create({ 
+    baseURL : 'https://nodemongo.cyclic.app',     
+    headers : headers 
+});     
 
-// Api.defaults.headers.common['Authorization'] = `Bearer${config.API_KEY}`;
-Api.defaults.headers.common['Accept'] = 'application/json';
+Api.defaults.withCredentials = true;
+export default Api; 
 
-export default Api;  
+
+ 
+ 

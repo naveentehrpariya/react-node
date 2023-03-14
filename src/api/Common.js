@@ -1,4 +1,4 @@
-import Api from "./api";
+import Api from "./Api";
 class Common { 
     signup(e, fdata){
         return new Promise((resolve, reject)=>{
