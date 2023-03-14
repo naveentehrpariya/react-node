@@ -21,7 +21,6 @@ export default function AddProducts() {
     fdata.append("description", productData.description );
     fdata.append("price", productData.price );
     fdata.append("category", productData.category );
-
     const resp = Api.Add_Product(fdata);
     resp.then((res)=>{
       console.log("res", res);
@@ -46,21 +45,17 @@ export default function AddProducts() {
         <div className="product-in inputform shadow-md p-4 roinded-3 my-4 ">
              <h4 className="mb-3">Add Product</h4>
             <div className="row">
-
               <div  className="col-md-6 mb-4" > 
                   <input  onChange={handleInput}type="text" name="name" className="form-control"  placeholder="Enter Your Product Title"/>
               </div>
               <div  className="col-md-6 mb-4" >
-              <input onChange={handleInput} type="file" name="image" className="form-control" placeholder="Choose File" />
-
+                <input onChange={handleInput} type="file" name="image" className="form-control" placeholder="Choose File" />
               </div>
               <div  className="col-md-6 mb-4" >
-              <input onChange={handleInput} type="text" name="category" placeholder="Category" className="form-control" />
-
+                <input onChange={handleInput} type="text" name="category" placeholder="Category" className="form-control" />
               </div>
               <div  className="col-md-6 mb-4" >
               <input onChange={handleInput} type="number" name="price" className="form-control"  placeholder="Price" />
-
               </div>
               <div  className="col-md-12 mb-4" >
               <input onChange={handleInput} type="text"  name="description" className="form-control" placeholder="Enter Your Product Description"/>
