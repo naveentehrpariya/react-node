@@ -15,7 +15,7 @@ class Common {
                 resolve(resp.data);
             }).catch((err)=>{ 
                 reject(err)
-            });
+            }); 
         });
     }
 }

@@ -1,13 +1,16 @@
 import React from 'react';
 import Api from "./Api";
+const add_product = '/add-products'
 
-
-class Apis extends React.Component {
-
-
-   async Add_Product(fdata){
-    return Api.post(`/add-products`, fdata);
+class Apis {
+   AddProduct(fdata){
+      return new Promise((resolve, reject)=>{
+         Api.post(add_product, fdata).then((res)=>{
+            resolve(res); 
+         }).catch((err)=>{
+            reject(err); 
+         })
+      });
    }
-
 }
-export default Apis;
+export default new Apis;

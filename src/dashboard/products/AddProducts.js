@@ -11,17 +11,18 @@ export default function AddProducts() {
     price:'',
     description:'',
   });
-
-  const Api = new Apis;
+ 
   const addPro = () => { 
     setLoading(true);
+
     const fdata = new FormData;
     fdata.append("name", productData.name );
     fdata.append("thumb", productData.image );
     fdata.append("description", productData.description );
     fdata.append("price", productData.price );
     fdata.append("category", productData.category );
-    const resp = Api.Add_Product(fdata);
+
+    const resp = Apis.AddProduct(fdata);
     resp.then((res)=>{
       console.log("res", res);
       setLoading(false);

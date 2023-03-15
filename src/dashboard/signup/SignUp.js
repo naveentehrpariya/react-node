@@ -8,7 +8,7 @@ export default function SignUp() {
       name:'',
       username:'',
       password:'',
-      email:''
+      email:'' 
     });
  
     const handleInput = (e) =>{ 
